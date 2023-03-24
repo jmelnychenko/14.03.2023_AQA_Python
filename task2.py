@@ -1,6 +1,6 @@
 # # Task 2.1
-# user_input = input('Input: ')
-# print("Word {0} has {1} letters.".format(user_input, str(len(user_input))))
+user_input = input('Input: ')
+print("Word {0} has {1} letters.".format(user_input, str(len(user_input))))
 
 # Task 2.2 - Касир в кінотеватрі
 user_age = input('Enter your age: ')
