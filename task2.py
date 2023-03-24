@@ -4,16 +4,18 @@ print("Word {0} has {1} letters.".format(user_input, str(len(user_input))))
 
 # Task 2.2 - Касир в кінотеватрі
 user_age = input('Enter your age: ')
-ua_var = int(user_age)  #user_age_variable
-if type(ua_var) == int:
-    if 7 > ua_var > 0:
-        print("Де твої батьки")
-    elif ua_var == 7:
+if user_age.isdigit():
+    ua_var = int(user_age)
+    if '7' in user_age:
         print("Вам сьогодні пощастить!")
-    elif 16 > ua_var > 7:
+    elif ua_var < 7:
+        print("Де твої батьки")
+    elif ua_var < 16:
         print("Це фільм для дорослих!")
     elif 99 > ua_var >= 65:
         print("Покажіть пенсійне посвідчення!")
+    elif ua_var >= 99:
+        print("Некоректний вік")
     else:
         print("А білетів вже немає!")
 else:
