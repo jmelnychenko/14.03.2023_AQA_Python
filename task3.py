@@ -1,3 +1,5 @@
+import re
+
 # Task 3.1
 while True:
     o_loop = input("Enter any word: ")
@@ -15,10 +17,12 @@ for i in lst1:
 print(lst2)
 
 # Task 3.3
-user_input_str = "test string.o hello trololO"
+
+user_input_str = "testO. string.o hello trololO"
 user_input_list = user_input_str.lower().split()
+new_list = [re.sub(r'[^\w\s]', '', item) for item in user_input_list]
 tmp_value = 0
-for i in user_input_list:
+for i in new_list:
     if i.endswith("o"):
         tmp_value += 1
 
