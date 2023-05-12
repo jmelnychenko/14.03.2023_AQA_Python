@@ -12,7 +12,6 @@ list_of_men = my_users['users']
 brown_man_age = 0
 brown_man_count = 0
 browm_avarage_age = 0
-list_Louisville = []
 
 # середній вік чоловіків з Brown волоссям
 for man in list_of_men:
