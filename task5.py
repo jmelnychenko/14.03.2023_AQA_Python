@@ -27,7 +27,7 @@ print(int(brown_avarage_age))
 #список людей, що проживають в місті Louisville
 list_Louisville = []
 for man in list_of_men:
-    man_city = man.get('address').get('city')
+    man_city = man.get('address', {}).get('city')
     if man_city == 'Louisville':
         list_Louisville.append(man)
 print(list(list_Louisville))
